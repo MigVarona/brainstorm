@@ -15,7 +15,7 @@ export default function Hero() {
             
           </h1>
           <p className="mt-6 mb-8 text-lg sm:mb-12">
-          Descubre un mundo de posibilidades con nuestro servicio líder en inteligencia artificial y robots diseñados para adaptarse a tus necesidades.
+          Descubre un mundo de posibilidades en nuestro marketplace líder en inteligencia artificial y robots diseñados para adaptarse a tus necesidades.
             
           </p>
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
