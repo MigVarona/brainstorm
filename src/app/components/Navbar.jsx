@@ -98,7 +98,7 @@ export default function Navbar() {
           </Dialog.Panel>
         </Dialog>
       </header>
-
-     </div>
+</div>
+     
   )
 }
