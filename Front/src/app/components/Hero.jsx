@@ -27,6 +27,13 @@ export default function Hero() {
             >
               MarketPlace
             </a>
+            <a
+              rel="noopener noreferrer"
+              href="clientes"
+              className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100"
+            >
+              Seller
+            </a>
           </div>
         </div>
       </div>

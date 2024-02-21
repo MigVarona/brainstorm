@@ -72,7 +72,7 @@ export default function HeroMark() {
             <a
               rel="noopener noreferrer"
               href="#"
-              className="flex items-center px-1 capitalize hover:underline hover:no-underline cursor-default"
+              className="flex items-center px-1 capitalize hover:underline"
             >
               IA
             </a>
