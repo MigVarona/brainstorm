@@ -10,7 +10,7 @@ function Gallery() {
             class="absolute inset-0 h-full w-full object-cover object-center"
           />
 
-          <div class="absolute inset-0  mix-blend-multiply"></div>
+          <div class="absolute inset-0 bg-gray-400 mix-blend-multiply"></div>
 
           <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
            
