@@ -5,3 +5,5 @@ const buyersRouter = Router();
 
 buyersRouter.route("/").get(buyersController.getAllProducts);
 buyersRouter.route("/:id").get(buyersController.getProductById);
+
+export default buyersRouter;
