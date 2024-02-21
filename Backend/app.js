@@ -2,6 +2,10 @@ import express from 'express';
 import buyersRouter from './routes/buyersRouter.js';
 import sellersRouter from './routes/sellersRouter.js';
 
+import dotenv from 'dotenv'
+dotenv.config()
+const PORT = process.env.PORT || 3030
+
 const app = express();
 
 app.use(express.json());
@@ -11,6 +15,6 @@ app.use("/", );
 app.use("/marketplace", buyersRouter);
 app.use("/newproduct", sellersRouter);
 
-app.listen(8080, () => {
-    console.log('Server is running on port 8080')
+app.listen(PORT, () => {
+    console.log('Server is running on port ' + PORT)
 })
