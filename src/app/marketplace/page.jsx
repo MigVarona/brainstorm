@@ -7,8 +7,7 @@ function Productos() {
 
         <div>
           
-            <h1>pagina productos</h1>
-            <img src="next.svg" alt="" />
+          
         </div>
      );
 }
