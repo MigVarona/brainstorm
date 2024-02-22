@@ -1,6 +1,6 @@
 // Modal.js
 import React from "react";
-import Image from "next/image";
+
 
 const Modal = ({ isOpen, onClose, data }) => {
   if (!isOpen) return null;
@@ -21,11 +21,12 @@ const Modal = ({ isOpen, onClose, data }) => {
             </button>
           </div>
           <div className="relative p-4 flex-auto">
-            <Image
+            <img
               src={data.imageSrc}
               alt={data.imageAlt}
               className="w-full h-full object-cover"
             />
+
             <p className="mt-4 text-base font-semibold text-gray-900">
               {data.description}
             </p>
@@ -38,6 +39,12 @@ const Modal = ({ isOpen, onClose, data }) => {
             <p className="mt-4 text-base font-semibold text-gray-900">
               Stock {data.stock}
             </p>
+
+            <p className="mt-4 text-base font-semibold text-gray-900">{data.description}</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Precio {data.precio}€</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Iva {data.iva}%</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Stock {data.stock}</p>
+
           </div>
           <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
             <button
