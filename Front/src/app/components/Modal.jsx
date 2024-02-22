@@ -2,7 +2,7 @@
 import React from "react";
 
 
-const Modal = ({ isOpen, onClose, data }) => {
+const Modal = ({ isOpen, onClose, product, image }) => {
   if (!isOpen) return null;
 
   return (
@@ -10,7 +10,7 @@ const Modal = ({ isOpen, onClose, data }) => {
       <div className="relative mx-auto max-w-md">
         <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-            <h3 className="text-3xl font-semibold">{data.name}</h3>
+            <h3 className="text-3xl font-semibold">{product.name}</h3>
             <button
               className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
               onClick={onClose}
@@ -22,17 +22,17 @@ const Modal = ({ isOpen, onClose, data }) => {
           </div>
           <div className="relative p-4 flex-auto">
             <img
-              src={data.imageSrc}
-              alt={data.imageAlt}
+              src={`/${image}`}
+              alt="imagen destacada"
               className="w-full h-full object-cover"
             />
 
            
 
-            <p className="mt-4 text-base font-semibold text-gray-900">{data.description}</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">Precio {data.price}€</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">Iva {data.tax}%</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">Stock {data.stock}</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">{product.description}</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Precio {product.price}€</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Iva {product.tax}%</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Stock {product.stock}</p>
 
           </div>
           <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">

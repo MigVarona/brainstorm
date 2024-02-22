@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import React, { useState, useEffect } from "react";
-import Modal from "./Modal";
+import Modal from "./Modal.jsx";
 
 const Card = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,87 +11,35 @@ const Card = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-      fetch('http://localhost:9000/products')
-          .then(response => response.json())
-          .then(data => setProducts(data))
-          .catch(error => console.error('Error fetching products:', error));
+    fetch('http://localhost:9000/products')
+      .then(response => response.json())
+      .then(data => setProducts(data))
+      .catch(error => console.error('Error fetching products:', error));
   }, []);
 
-  const openModal = (callout) => {
-    setSelectedCallout(callout);
+  const imageNames = [
+    "2A70F7AE-6CBC-47C1-926E-D993E675DD68.jpg",
+    "7C50D0AA-71C2-45A4-AFF0-580B17BBEDFF.jpg",
+    "7F08FF94-2F09-40AD-AF06-A398251FEFD8.jpg",
+    "34FA4853-81FA-40D2-B3FF-CE42959D640E.jpg",
+    "40ECB0CF-EFF7-40AA-AA48-F199A8030468.jpg",
+    "274FAE5D-1C9A-4182-80C3-AE2D301DBE74.jpg",
+    "94371DF1-D6C9-4CC6-A8CD-E702F3B3F207.jpg",
+    "70159197-6FAB-47ED-8E84-F5707D029814.jpg",
+    "CBE05F00-3744-4E3A-8D9F-13CB4E89784C.jpg",
+    "E63209C0-5429-49BE-A0A7-B2C2FF9B0957.jpg",
+    "F11DAE42-0C80-40D4-95F1-170BE29E1155.jpg",
+    "F407D81B-84D3-46E1-AE5E-DB937BBB0BFC.jpg",
+  ];
+
+  const openModal = (product) => {
+    setSelectedCallout(product);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
   };
-
-  const callouts = [
-    {
-      name: "Federico Lopez",
-      description: "Robot de asistencia",
-      imageSrc: "70159197-6FAB-47ED-8E84-F5707D029814.jpg",
-      profile:
-        "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
-      imageAlt:
-        "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-      href: "#",
-      price: 150,
-      tax: 21,
-      stock: 20,
-    },
-    {
-      name: "Self-Improvement",
-      description: "Journals and note-taking",
-      imageSrc: "274FAE5D-1C9A-4182-80C3-AE2D301DBE74.jpg",
-      imageAlt:
-        "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-      href: "#",
-      price: 150,
-      tax: 21,
-      stock: 20,
-    },
-    {
-      name: "Travel",
-      description: "Daily commute essentials",
-      imageSrc: "CBE05F00-3744-4E3A-8D9F-13CB4E89784C.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-      price: 150,
-      tax: 21,
-      stock: 20,
-    },
-    {
-      name: "Travel",
-      description: "Daily commute essentials",
-      imageSrc: "2A70F7AE-6CBC-47C1-926E-D993E675DD68.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-      price: 150,
-      tax: 21,
-      stock: 20,
-    },
-    {
-      name: "Travel",
-      description: "Daily commute essentials",
-      imageSrc: "40ECB0CF-EFF7-40AA-AA48-F199A8030468.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-      price: 150,
-      tax: 21,
-      stock: 20,
-    },
-    {
-      name: "Travel",
-      description: "Daily commute essentials",
-      imageSrc: "34FA4853-81FA-40D2-B3FF-CE42959D640E.jpg",
-      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-      href: "#",
-      price: 150,
-      tax: 21,
-      stock: 20,
-    },
-  ];
 
   return (
     <div className="w-full px-4 md:px-8 ml-20 mr-20 mb-20">
@@ -106,8 +54,8 @@ const Card = () => {
               >
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                   <img
-                    src={""}
-                    alt={""}
+                    src={`/${imageNames[Math.floor(Math.random() * imageNames.length)]}`} // Ruta de la imagen aleatoria
+                    alt="imagen destacada"
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
@@ -126,7 +74,7 @@ const Card = () => {
           </div>
         </div>
       </div>
-      <Modal isOpen={modalOpen} onClose={closeModal} data={selectedCallout} />
+      <Modal isOpen={modalOpen} onClose={closeModal} product={selectedCallout} image={imageNames[Math.floor(Math.random() * imageNames.length)]}/>
     </div>
   );
 };
