@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="dark:bg-gray-800 mt-20 dark:text-gray-100">
-      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+    <section className="dark:bg-gray-800  mt-20 dark:text-gray-100">
+      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-40 lg:flex-row lg:justify-between">
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
           <img
             src="65316807-7c37-4416-8a13-4975f13dc892.jpg"
