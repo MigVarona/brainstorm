@@ -1,4 +1,5 @@
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Footer from "../components/Footer"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -249,6 +250,8 @@ export default function Example() {
           </button>
         </div>
       </form>
+      
     </div>
+    
   );
 }
