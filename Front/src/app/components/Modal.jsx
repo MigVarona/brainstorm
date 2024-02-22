@@ -36,9 +36,9 @@ const Modal = ({ isOpen, onClose, data }) => {
             <p className="mt-2 text-base font-semibold text-gray-900">
               Stock: {data.stock}
             </p>
-            <div className="flex items-center justify-end mt-4">
+            <div className="flex mr-6 items-center justify-end mt-40">
               <button
-                className="px-4 py-2 text-sm font-bold text-white bg-emerald-500 rounded"
+                className="px-4 py-2 text-sm font-bold text-white bg-primary rounded"
                 onClick={onClose}
               >
                 Cerrar
