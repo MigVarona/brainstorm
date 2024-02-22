@@ -24,7 +24,7 @@ const Modal = ({ isOpen, onClose, data }) => {
               className="w-full h-full object-cover"
             />
             <p className="mt-4 text-base font-semibold text-gray-900">{data.description}</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">precio {data.precio}€</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Precio {data.precio}€</p>
             <p className="mt-4 text-base font-semibold text-gray-900">Iva {data.iva}%</p>
             <p className="mt-4 text-base font-semibold text-gray-900">Stock {data.stock}</p>
           </div>
