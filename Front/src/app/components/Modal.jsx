@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 
 const Modal = ({ isOpen, onClose, data }) => {
   if (!isOpen) return null;
+
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const handleToggleFavorite = () => {
+    setIsFavorite((prevIsFavorite) => !prevIsFavorite);
+  };
+
+  const handleAddToCart = () => {
+    // Implementa la lógica para añadir al carrito aquí
+    console.log("Añadir al carrito:", data.name);
+  };
 
   return (
     <div className="fixed inset-0 z-50 overflow-auto bg-opacity-50 bg-black">
@@ -17,12 +29,22 @@ const Modal = ({ isOpen, onClose, data }) => {
           <div className="w-1/2 p-4">
             <div className="flex items-start justify-between">
               <h3 className="text-2xl font-semibold">{data.name}</h3>
-              <button
-                className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-2xl leading-none font-semibold"
-                onClick={onClose}
-              >
-                ×
-              </button>
+              <div className="flex">
+                <button
+                  className={`p-1 bg-transparent border-0 text-black opacity-1 text-2xl leading-none font-semibold ${
+                    isFavorite ? "text-red-500" : ""
+                  }`}
+                  onClick={handleToggleFavorite}
+                >
+                  ♥
+                </button>
+                <button
+                  className="p-1 ml-4 bg-transparent border-0 text-black opacity-1 text-2xl leading-none font-semibold"
+                  onClick={onClose}
+                >
+                  ×
+                </button>
+              </div>
             </div>
             <p className="text-base font-semibold text-gray-900">
               {data.description}
@@ -36,12 +58,17 @@ const Modal = ({ isOpen, onClose, data }) => {
             <p className="mt-2 text-base font-semibold text-gray-900">
               Stock: {data.stock}
             </p>
-            <div className="flex items-center justify-end mt-4">
+            <div className="flex items-center justify-around mt-4">
+              <Link href="/sellerContact">
+                <div className="px-4 py-2 text-sm font-bold text-white bg-blue-500 rounded">
+                  Contactar al vendedor
+                </div>
+              </Link>
               <button
                 className="px-4 py-2 text-sm font-bold text-white bg-emerald-500 rounded"
-                onClick={onClose}
+                onClick={handleAddToCart}
               >
-                Cerrar
+                Añadir al carrito
               </button>
             </div>
           </div>
