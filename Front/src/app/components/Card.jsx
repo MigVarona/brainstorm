@@ -20,7 +20,7 @@ const callouts = [
     {
       name: 'Federico Lopez',
       description: 'Robot de asistencia',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+      imageSrc: '70159197-6FAB-47ED-8E84-F5707D029814.jpg',
       profile: 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg',
       imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
       href: '#',
@@ -31,7 +31,7 @@ const callouts = [
     {
       name: 'Self-Improvement',
       description: 'Journals and note-taking',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
+      imageSrc: '274FAE5D-1C9A-4182-80C3-AE2D301DBE74.jpg',
       imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
       href: '#',
       precio: 150,  
@@ -41,7 +41,7 @@ const callouts = [
     {
       name: 'Travel',
       description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+      imageSrc: 'CBE05F00-3744-4E3A-8D9F-13CB4E89784C.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
       precio: 150,  
@@ -51,7 +51,7 @@ const callouts = [
     {
       name: 'Travel',
       description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+      imageSrc: '2A70F7AE-6CBC-47C1-926E-D993E675DD68.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
       precio: 150,  
@@ -61,7 +61,7 @@ const callouts = [
     {
       name: 'Travel',
       description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+      imageSrc: '40ECB0CF-EFF7-40AA-AA48-F199A8030468.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
       precio: 150,  
@@ -71,7 +71,7 @@ const callouts = [
     {
       name: 'Travel',
       description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+      imageSrc: '34FA4853-81FA-40D2-B3FF-CE42959D640E.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
       precio: 150,  
