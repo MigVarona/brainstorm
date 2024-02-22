@@ -17,10 +17,10 @@ const Card = () => {
           .catch(error => console.error('Error fetching products:', error));
   }, []);
 
-  // const openModal = (callout) => {
-  //   setSelectedCallout(callout);
-  //   setModalOpen(true);
-  // };
+  const openModal = (callout) => {
+    setSelectedCallout(callout);
+    setModalOpen(true);
+  };
 
   const closeModal = () => {
     setModalOpen(false);
@@ -119,14 +119,14 @@ const Card = () => {
                 </h3>
 
                 <p className="text-base text-gray-700">
-                  Precio: ${callout.price}
+                  Precio: ${product.price}
                 </p>
               </div>
             ))}
           </div>
         </div>
       </div>
-      {/* <Modal isOpen={modalOpen} onClose={closeModal} data={selectedCallout} /> */}
+      <Modal isOpen={modalOpen} onClose={closeModal} data={selectedCallout} />
     </div>
   );
 };
