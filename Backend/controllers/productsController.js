@@ -4,8 +4,10 @@ const productsController = {
 
     getAllProducts: async (req, res) => {
         try {
+            
             const products = await productsModel.getAllProducts()
-            res.send(products)
+            //res.send(products)
+            res.send('Hola Mundo')
         }catch (e) {
             console.error(e);
         }
