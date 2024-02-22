@@ -1,5 +1,4 @@
 // Modal.js
-import React from "react";
 import React, { useState } from "react";
 import Link from "next/link";
 const Modal = ({ isOpen, onClose, product, image }) => {

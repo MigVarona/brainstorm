@@ -2,5 +2,10 @@ C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainst
 C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\BackendApplication.java
 C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\controllers\ProductRequest.java
 C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\controllers\ProductResponse.java
+C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\controllers\SellerController.java
+C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\persistence\Seller.java
 C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\persistence\ProductRepository.java
+C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\persistence\SellerRepository.java
 C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\controllers\ProductController.java
+C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\controllers\SellerResponse.java
+C:\Users\Roxy_\FactoriaF5-proyectos\brainstorm\Backend\src\main\java\com\brainstorm\backend\controllers\SellerRequest.java

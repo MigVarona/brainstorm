@@ -1,5 +1,10 @@
+com\brainstorm\backend\controllers\SellerResponse.class
 com\brainstorm\backend\persistence\Product.class
+com\brainstorm\backend\persistence\SellerRepository.class
+com\brainstorm\backend\controllers\SellerController.class
 com\brainstorm\backend\controllers\ProductController.class
 com\brainstorm\backend\controllers\ProductResponse.class
+com\brainstorm\backend\controllers\SellerRequest.class
 com\brainstorm\backend\controllers\ProductRequest.class
+com\brainstorm\backend\persistence\Seller.class
 com\brainstorm\backend\BackendApplication.class
