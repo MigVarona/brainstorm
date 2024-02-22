@@ -28,8 +28,8 @@ const CardDispositivos = () => {
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -39,8 +39,8 @@ const CardDispositivos = () => {
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -49,8 +49,8 @@ const CardDispositivos = () => {
       imageSrc: "94371DF1-D6C9-4CC6-A8CD-E702F3B3F207.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -59,8 +59,8 @@ const CardDispositivos = () => {
       imageSrc: "7C50D0AA-71C2-45A4-AFF0-580B17BBEDFF.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -69,8 +69,8 @@ const CardDispositivos = () => {
       imageSrc: "F11DAE42-0C80-40D4-95F1-170BE29E1155.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -79,8 +79,8 @@ const CardDispositivos = () => {
       imageSrc: "E63209C0-5429-49BE-A0A7-B2C2FF9B0957.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
   ];
@@ -111,7 +111,7 @@ const CardDispositivos = () => {
                 </h3>
 
                 <p className="text-base text-gray-700">
-                  Precio: ${callout.precio}
+                  Precio: ${callout.price}
                 </p>
               </div>
             ))}

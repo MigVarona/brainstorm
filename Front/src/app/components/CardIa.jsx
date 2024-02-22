@@ -28,8 +28,8 @@ const CardIa = () => {
       imageAlt:
         "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -39,8 +39,8 @@ const CardIa = () => {
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -49,8 +49,8 @@ const CardIa = () => {
       imageSrc: "CBE05F00-3744-4E3A-8D9F-13CB4E89784C.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -59,8 +59,8 @@ const CardIa = () => {
       imageSrc: "2A70F7AE-6CBC-47C1-926E-D993E675DD68.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -69,8 +69,8 @@ const CardIa = () => {
       imageSrc: "40ECB0CF-EFF7-40AA-AA48-F199A8030468.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
     {
@@ -79,8 +79,8 @@ const CardIa = () => {
       imageSrc: "34FA4853-81FA-40D2-B3FF-CE42959D640E.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
-      precio: 150,
-      iva: 21,
+      price: 150,
+      tax: 21,
       stock: 20,
     },
   ];
@@ -111,7 +111,7 @@ const CardIa = () => {
                 </h3>
 
                 <p className="text-base text-gray-700">
-                  Precio: ${callout.precio}
+                  Precio: ${callout.price}
                 </p>
               </div>
             ))}
