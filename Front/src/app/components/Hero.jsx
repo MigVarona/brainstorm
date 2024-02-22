@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="dark:bg-gray-800  mt-20 dark:text-gray-100">
+    <section data-testid="hero-component" className="dark:bg-gray-800  mt-20 dark:text-gray-100">
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-40 lg:flex-row lg:justify-between">
         <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
           <Image
@@ -26,6 +26,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               href="marketplace"
               className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100"
+              data-testid="marketplace-link"
             >
               MarketPlace
             </Link>
@@ -33,6 +34,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               href="clientes"
               className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100"
+              data-testid="seller-link"
             >
               Seller
             </Link>

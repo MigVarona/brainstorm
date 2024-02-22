@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Image from "next/image";
