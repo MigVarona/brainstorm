@@ -1,81 +1,126 @@
+"use client";
 
+import Link from "next/link";
 
-const callouts = [
+import React, { useState } from "react";
+import Modal from "./Modal";
+
+const Card = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedCallout, setSelectedCallout] = useState(null);
+
+  const openModal = (callout) => {
+    setSelectedCallout(callout);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  const callouts = [
     {
-      name: 'Desk and Office',
-      description: 'Work from home accessories',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-      imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-      href: '#',
+      name: "Federico Lopez",
+      description: "Robot de asistencia",
+      imageSrc: "70159197-6FAB-47ED-8E84-F5707D029814.jpg",
+      profile:
+        "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
+      imageAlt:
+        "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
+      href: "#",
+      precio: 150,
+      iva: 21,
+      stock: 20,
     },
     {
-      name: 'Self-Improvement',
-      description: 'Journals and note-taking',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-      imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-      href: '#',
+      name: "Self-Improvement",
+      description: "Journals and note-taking",
+      imageSrc: "274FAE5D-1C9A-4182-80C3-AE2D301DBE74.jpg",
+      imageAlt:
+        "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
+      href: "#",
+      precio: 150,
+      iva: 21,
+      stock: 20,
     },
     {
-      name: 'Travel',
-      description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-      href: '#',
+      name: "Travel",
+      description: "Daily commute essentials",
+      imageSrc: "CBE05F00-3744-4E3A-8D9F-13CB4E89784C.jpg",
+      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+      href: "#",
+      precio: 150,
+      iva: 21,
+      stock: 20,
     },
     {
-      name: 'Travel',
-      description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-      href: '#',
+      name: "Travel",
+      description: "Daily commute essentials",
+      imageSrc: "2A70F7AE-6CBC-47C1-926E-D993E675DD68.jpg",
+      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+      href: "#",
+      precio: 150,
+      iva: 21,
+      stock: 20,
     },
     {
-      name: 'Travel',
-      description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-      href: '#',
+      name: "Travel",
+      description: "Daily commute essentials",
+      imageSrc: "40ECB0CF-EFF7-40AA-AA48-F199A8030468.jpg",
+      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+      href: "#",
+      precio: 150,
+      iva: 21,
+      stock: 20,
     },
     {
-      name: 'Travel',
-      description: 'Daily commute essentials',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-      href: '#',
+      name: "Travel",
+      description: "Daily commute essentials",
+      imageSrc: "34FA4853-81FA-40D2-B3FF-CE42959D640E.jpg",
+      imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
+      href: "#",
+      precio: 150,
+      iva: 21,
+      stock: 20,
     },
-  ]
-  
-  export default function Card() {
-    return (
-      <div className="w-full mb-20">
-      
-        <div className="mx-auto max-w-7xl gap-20  sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-2 sm:py-24 lg:max-w-none lg:py-2">
-           
-  
-            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
-              {callouts.map((callout) => (
-                <div key={callout.name} className="mb-20 group relative">
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                    <img
-                      src={callout.imageSrc}
-                      alt={callout.imageAlt}
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-                  <h3 className="mt-6 text-sm text-gray-500">
-                    <a href={callout.href}>
-                      <span className="absolute inset-0" />
-                      {callout.name}
-                    </a>
-                  </h3>
-                  <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+  ];
+
+  return (
+    <div className="w-full px-4 md:px-8 ml-20 mr-20 mb-20">
+      <div className="mx-auto max-w-7xl gap-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl py-2 sm:py-24 lg:max-w-none lg:py-2">
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            {callouts.map((callout) => (
+              <div
+                key={callout.name}
+                className="mb-20 group relative cursor-pointer"
+                onClick={() => openModal(callout)}
+              >
+                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                  <img
+                    src={callout.imageSrc}
+                    alt={callout.imageAlt}
+                    className="h-full w-full object-cover object-center"
+                  />
                 </div>
-              ))}
-            </div>
+                <h3 className="mt-6 text-sm text-gray-500">
+                  <Link href={callout.href}>
+                    <span className="absolute inset-0" />
+                    {callout.name}
+                  </Link>
+                </h3>
+
+                <p className="text-base text-gray-700">
+                  Precio: ${callout.precio}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    )
-  }
-  
+      <Modal isOpen={modalOpen} onClose={closeModal} data={selectedCallout} />
+    </div>
+  );
+};
+
+export default Card;
