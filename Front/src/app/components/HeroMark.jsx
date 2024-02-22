@@ -52,7 +52,7 @@ export default function HeroMark() {
             <span className="dark:text-gray-400"></span>
             <Link
               rel="noopener noreferrer"
-              href="#"
+              href="dispositivos"
               className="flex items-center px-1 capitalize hover:underline"
             >
               Dispositivos
@@ -62,7 +62,7 @@ export default function HeroMark() {
             <span className="dark:text-gray-400">/</span>
             <Link
               rel="noopener noreferrer"
-              href="#"
+              href="marketplace"
               className="flex items-center px-1 capitalize hover:underline"
             >
               Robots
@@ -72,7 +72,7 @@ export default function HeroMark() {
             <span className="dark:text-gray-400">/</span>
             <Link
               rel="noopener noreferrer"
-              href="#"
+              href="ia"
               className="flex items-center px-1 capitalize hover:underline"
             >
               IA
