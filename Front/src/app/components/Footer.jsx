@@ -1,6 +1,6 @@
 function Footer() {
     return (
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer justify-around p-10 bg-base-200 text-base-content text-center">
       <nav>
         <h6 className="footer-title">Services</h6> 
         <a className="link link-hover">Branding</a>
@@ -27,10 +27,7 @@ function Footer() {
           <label className="label">
             <span className="label-text">Enter your email address</span>
           </label> 
-          <div className="join">
-            <input type="text" placeholder="username@site.com" className="input input-bordered join-item" /> 
-            <button className="btn btn-primary join-item">Subscribe</button>
-          </div>
+          
         </fieldset>
       </form>
     </footer>
