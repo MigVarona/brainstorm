@@ -23,7 +23,7 @@ const CardIa = () => {
     {
       name: "Federico Lopez",
       description: "Robot de asistencia",
-      imageSrc: "_2be5886f-77b9-4d91-b548-1f7291c65974.jpg",
+      imageSrc: "_4f8de2cf-93e9-40bb-8535-80b0b66b71b2.jpg",
       profile:
         "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
       imageAlt:
