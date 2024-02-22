@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-const Modal = ({ isOpen, onClose, data }) => {
+
+const Modal = ({ isOpen, onClose, product, image }) => {
   if (!isOpen) return null;
 
   const [isFavorite, setIsFavorite] = useState(false);
@@ -21,8 +22,8 @@ const Modal = ({ isOpen, onClose, data }) => {
         <div className="relative w-full max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden flex">
           <div className="w-1/2">
             <img
-              src={data.imageSrc}
-              alt={data.imageAlt}
+              src={`/${image}`}
+              alt="imagen destacada"
               className="w-full h-full object-cover"
             />
           </div>
