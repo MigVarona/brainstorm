@@ -26,9 +26,11 @@ const Modal = ({ isOpen, onClose, data }) => {
               alt={data.imageAlt}
               className="w-full h-full object-cover"
             />
+       
+              
+            
 
            
-
             <p className="mt-4 text-base font-semibold text-gray-900">{data.description}</p>
             <p className="mt-4 text-base font-semibold text-gray-900">Precio {data.price}€</p>
             <p className="mt-4 text-base font-semibold text-gray-900">Iva {data.tax}%</p>
