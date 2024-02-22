@@ -1,5 +1,6 @@
 // Modal.js
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
 const Modal = ({ isOpen, onClose, data }) => {
   if (!isOpen) return null;
@@ -14,19 +15,29 @@ const Modal = ({ isOpen, onClose, data }) => {
               className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
               onClick={onClose}
             >
-              <span className="text-black h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
+              <span className="text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
+                ×
+              </span>
             </button>
           </div>
           <div className="relative p-4 flex-auto">
-            <img
+            <Image
               src={data.imageSrc}
               alt={data.imageAlt}
               className="w-full h-full object-cover"
             />
-            <p className="mt-4 text-base font-semibold text-gray-900">{data.description}</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">precio {data.precio}€</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">Iva {data.iva}%</p>
-            <p className="mt-4 text-base font-semibold text-gray-900">Stock {data.stock}</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">
+              {data.description}
+            </p>
+            <p className="mt-4 text-base font-semibold text-gray-900">
+              precio {data.precio}€
+            </p>
+            <p className="mt-4 text-base font-semibold text-gray-900">
+              Iva {data.iva}%
+            </p>
+            <p className="mt-4 text-base font-semibold text-gray-900">
+              Stock {data.stock}
+            </p>
           </div>
           <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
             <button

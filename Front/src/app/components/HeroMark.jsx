@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroMark() {
   return (
     <section className="mt-20  overflow-hidden">
@@ -9,7 +11,7 @@ export default function HeroMark() {
                 El Marketplace Nº1 en España <br />
                 <span></span>
               </h1>
-              <a
+              <Link
                 className="mb-2 inline-block rounded-full border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
                 data-te-ripple-init
                 data-te-ripple-color="light"
@@ -17,8 +19,8 @@ export default function HeroMark() {
                 role="button"
               >
                 Get started
-              </a>
-              <a
+              </Link>
+              <Link
                 className="inline-block rounded-full px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-20 hover:text-neutral-200 focus:text-neutral-200 focus:outline-none focus:ring-0 active:text-neutral-300"
                 data-te-ripple-init
                 data-te-ripple-color="light"
@@ -26,7 +28,7 @@ export default function HeroMark() {
                 role="button"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -46,36 +48,35 @@ export default function HeroMark() {
         className="flex mt-10 justify-center items-center w-full p-4 dark:bg-gray-800 dark:text-gray-100"
       >
         <ol className="flex h-8 space-x-2 dark:text-gray-100">
-      
           <li className="flex items-center space-x-1">
             <span className="dark:text-gray-400"></span>
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
               className="flex items-center px-1 capitalize hover:underline"
             >
               Dispositivos
-            </a>
+            </Link>
           </li>
           <li className="flex items-center space-x-1">
             <span className="dark:text-gray-400">/</span>
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
               className="flex items-center px-1 capitalize hover:underline"
             >
               Robots
-            </a>
+            </Link>
           </li>
           <li className="flex items-center space-x-1">
             <span className="dark:text-gray-400">/</span>
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
               className="flex items-center px-1 capitalize hover:underline"
             >
               IA
-            </a>
+            </Link>
           </li>
         </ol>
       </nav>
