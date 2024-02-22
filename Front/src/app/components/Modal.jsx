@@ -58,12 +58,6 @@ const Modal = ({ isOpen, onClose, data }) => {
             <p className="mt-2 text-base font-semibold text-gray-900">
               Stock: {data.stock}
             </p>
-<<<<<<< HEAD
-            <div className="flex mr-6 items-center justify-end mt-40">
-              <button
-                className="px-4 py-2 text-sm font-bold text-white bg-primary rounded"
-                onClick={onClose}
-=======
             <div className="flex items-center justify-around mt-4">
               <Link href="/sellerContact">
                 <div className="px-4 py-2 text-sm font-bold text-white bg-blue-500 rounded">
@@ -73,7 +67,6 @@ const Modal = ({ isOpen, onClose, data }) => {
               <button
                 className="px-4 py-2 text-sm font-bold text-white bg-emerald-500 rounded"
                 onClick={handleAddToCart}
->>>>>>> 696321d02a1ab97a26979992b0d70820b7f68da4
               >
                 Añadir al carrito
               </button>
