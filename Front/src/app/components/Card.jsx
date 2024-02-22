@@ -18,11 +18,15 @@ const Card = () => {
 
 const callouts = [
     {
-      name: 'Desk and Office',
-      description: 'Work from home accessories',
+      name: 'Federico Lopez',
+      description: 'Robot de asistencia',
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+      profile: 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg',
       imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
       href: '#',
+      precio: 150,  
+      iva: 21,   
+      stock: 20,
     },
     {
       name: 'Self-Improvement',
@@ -30,6 +34,9 @@ const callouts = [
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
       imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
       href: '#',
+      precio: 150,  
+      iva: 21,   
+      stock: 20,
     },
     {
       name: 'Travel',
@@ -37,6 +44,9 @@ const callouts = [
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
+      precio: 150,  
+      iva: 21,   
+      stock: 20,
     },
     {
       name: 'Travel',
@@ -44,6 +54,9 @@ const callouts = [
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
+      precio: 150,  
+      iva: 21,   
+      stock: 20,
     },
     {
       name: 'Travel',
@@ -51,6 +64,9 @@ const callouts = [
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
+      precio: 150,  
+      iva: 21,   
+      stock: 20,
     },
     {
       name: 'Travel',
@@ -58,12 +74,15 @@ const callouts = [
       imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
       href: '#',
+      precio: 150,  
+      iva: 21,   
+      stock: 20,
     },
   ]
   
   return (
     <div className="w-full mb-20">
-      <div className="mx-auto max-w-7xl gap-20  sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl gap-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-2 sm:py-24 lg:max-w-none lg:py-2">
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
@@ -85,7 +104,9 @@ const callouts = [
                     {callout.name}
                   </a>
                 </h3>
-                <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                
+                <p className="text-base text-gray-700">Precio: ${callout.precio}</p>
+          
               </div>
             ))}
           </div>

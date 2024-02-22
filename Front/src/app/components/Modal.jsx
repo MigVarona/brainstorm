@@ -6,7 +6,7 @@ const Modal = ({ isOpen, onClose, data }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
-      <div className="relative mx-auto max-w-3xl">
+      <div className="relative mx-auto max-w-md">
         <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
           <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
             <h3 className="text-3xl font-semibold">{data.name}</h3>
@@ -17,13 +17,16 @@ const Modal = ({ isOpen, onClose, data }) => {
               <span className="text-black h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
             </button>
           </div>
-          <div className="relative p-6 flex-auto">
+          <div className="relative p-4 flex-auto">
             <img
               src={data.imageSrc}
               alt={data.imageAlt}
               className="w-full h-full object-cover"
             />
             <p className="mt-4 text-base font-semibold text-gray-900">{data.description}</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">precio {data.precio}€</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Iva {data.iva}%</p>
+            <p className="mt-4 text-base font-semibold text-gray-900">Stock {data.stock}</p>
           </div>
           <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
             <button
