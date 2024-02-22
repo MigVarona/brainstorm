@@ -22,7 +22,7 @@ const CardIa = () => {
     {
       name: "Federico Lopez",
       description: "Robot de asistencia",
-      imageSrc: "70159197-6FAB-47ED-8E84-F5707D029814.jpg",
+      imageSrc: "_2be5886f-77b9-4d91-b548-1f7291c65974.jpg",
       profile:
         "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg",
       imageAlt:
@@ -35,7 +35,7 @@ const CardIa = () => {
     {
       name: "Self-Improvement",
       description: "Journals and note-taking",
-      imageSrc: "274FAE5D-1C9A-4182-80C3-AE2D301DBE74.jpg",
+      imageSrc: "_75abcec9-2ea7-4943-96ed-94ab7df2f4ca.jpg",
       imageAlt:
         "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
       href: "#",
@@ -46,7 +46,7 @@ const CardIa = () => {
     {
       name: "Travel",
       description: "Daily commute essentials",
-      imageSrc: "CBE05F00-3744-4E3A-8D9F-13CB4E89784C.jpg",
+      imageSrc: "_db71dbf5-dd5d-4c87-8c3d-b9abbe53c6fb.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
       price: 150,
@@ -56,7 +56,7 @@ const CardIa = () => {
     {
       name: "Travel",
       description: "Daily commute essentials",
-      imageSrc: "2A70F7AE-6CBC-47C1-926E-D993E675DD68.jpg",
+      imageSrc: "_98a6564a-4281-4cb5-9ea7-7779c8bd663c.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
       price: 150,
@@ -66,7 +66,7 @@ const CardIa = () => {
     {
       name: "Travel",
       description: "Daily commute essentials",
-      imageSrc: "40ECB0CF-EFF7-40AA-AA48-F199A8030468.jpg",
+      imageSrc: "_abefdec0-812e-49e7-a982-9451a1c4d8ca.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
       price: 150,
@@ -76,7 +76,7 @@ const CardIa = () => {
     {
       name: "Travel",
       description: "Daily commute essentials",
-      imageSrc: "34FA4853-81FA-40D2-B3FF-CE42959D640E.jpg",
+      imageSrc: "_92d5ac80-3b4c-4aba-98a1-dc9e370471d0.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
       price: 150,
