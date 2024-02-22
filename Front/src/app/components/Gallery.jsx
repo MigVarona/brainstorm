@@ -15,7 +15,7 @@ function Gallery() {
           <div class="relative flex flex-col items-center p-4 sm:max-w-xl">
            
             <h1 class="mb-8 text-center text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">
-              20% de descuentos para nuevos clientes
+              20% de descuento para nuevos clientes
             </h1>
 
           </div>
