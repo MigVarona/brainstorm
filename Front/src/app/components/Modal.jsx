@@ -1,7 +1,7 @@
+// Modal.js
+import React from "react";
 import React, { useState } from "react";
 import Link from "next/link";
-
-
 const Modal = ({ isOpen, onClose, product, image }) => {
   if (!isOpen) return null;
 
@@ -12,24 +12,23 @@ const Modal = ({ isOpen, onClose, product, image }) => {
   };
 
   const handleAddToCart = () => {
-    // Implementa la lógica para añadir al carrito aquí
-    console.log("Añadir al carrito:", data.name);
+    console.log("Añadir al carrito:", product.name);
   };
-
+  
   return (
     <div className="fixed inset-0 z-50 overflow-auto bg-opacity-50 bg-black">
       <div className="flex items-center justify-center min-h-screen p-4">
         <div className="relative w-full max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden flex">
           <div className="w-1/2">
             <img
-              src={`/${image}`}
+              src={image}
               alt="imagen destacada"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-1/2 p-4">
             <div className="flex items-start justify-between">
-              <h3 className="text-2xl font-semibold">{data.name}</h3>
+              <h3 className="text-2xl font-semibold">{product.name}</h3>
               <div className="flex">
                 <button
                   className={`p-1 bg-transparent border-0 text-black opacity-1 text-2xl leading-none font-semibold ${
@@ -48,16 +47,16 @@ const Modal = ({ isOpen, onClose, product, image }) => {
               </div>
             </div>
             <p className="text-base font-semibold text-gray-900">
-              {data.description}
+              {product.description}
             </p>
             <p className="mt-2 text-base font-semibold text-gray-900">
-              Precio: {data.price}€
+              Precio: {product.price}€
             </p>
             <p className="mt-2 text-base font-semibold text-gray-900">
-              IVA: {data.tax}%
+              IVA: {product.tax}%
             </p>
             <p className="mt-2 text-base font-semibold text-gray-900">
-              Stock: {data.stock}
+              Stock: {product.stock}
             </p>
             <div className="flex items-center justify-around mt-4">
               <Link href="/sellerContact">

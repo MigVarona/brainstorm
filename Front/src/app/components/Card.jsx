@@ -32,7 +32,7 @@ const Card = () => {
     "F407D81B-84D3-46E1-AE5E-DB937BBB0BFC.jpg",
   ];
 
-  const openModal = (product) => {
+  const openModal = (product, event) => {
     event.preventDefault();
     setSelectedCallout(product);
     setModalOpen(true);
