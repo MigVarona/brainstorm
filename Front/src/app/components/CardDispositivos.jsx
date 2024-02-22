@@ -9,7 +9,8 @@ const CardDispositivos = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedCallout, setSelectedCallout] = useState(null);
 
-  const openModal = (callout) => {
+  const openModal = (callout, event) => {
+    event.preventDefault();
     setSelectedCallout(callout);
     setModalOpen(true);
   };
@@ -94,7 +95,7 @@ const CardDispositivos = () => {
               <div
                 key={callout.name}
                 className="mb-20 group relative cursor-pointer"
-                onClick={() => openModal(callout)}
+                onClick={(event) => openModal(callout, event)}
               >
                 <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                   <img
@@ -103,12 +104,7 @@ const CardDispositivos = () => {
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <h3 className="mt-6 text-sm text-gray-500">
-                  <Link href={callout.href}>
-                    <span className="absolute inset-0" />
-                    {callout.name}
-                  </Link>
-                </h3>
+                <div className="mt-6 text-sm text-gray-500">{callout.name}</div>
 
                 <p className="text-base text-gray-700">
                   Precio: ${callout.price}
