@@ -77,7 +77,7 @@ const CardDispositivos = () => {
     {
       name: "Travel",
       description: "Daily commute essentials",
-      imageSrc: "E63209C0-5429-49BE-A0A7-B2C2FF9B0957.jpg",
+      imageSrc: "npm run testE63209C0-5429-49BE-A0A7-B2C2FF9B0957.jpg",
       imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
       href: "#",
       price: 150,

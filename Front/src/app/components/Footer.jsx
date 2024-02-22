@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="footer justify-around p-10 bg-base-200 text-base-content text-center">
+    <footer data-testid="footer-component" className="footer justify-around p-10 bg-base-200 text-base-content text-center">
       <nav>
         <h6 className="footer-title">Services</h6>
         <a className="link link-hover">Branding</a>
