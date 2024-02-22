@@ -81,7 +81,7 @@ const callouts = [
   ]
   
   return (
-    <div className="w-full  flex-wrap ml-20 mr-20 mb-20">
+    <div className="w-full px-4 md:px-8 ml-20 mr-20 mb-20">
       <div className="mx-auto max-w-7xl gap-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-2 sm:py-24 lg:max-w-none lg:py-2">
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
