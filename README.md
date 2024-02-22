@@ -1,5 +1,4 @@
 # Brainstorm marketplace
-![logotipo Brainstorm Marketplace](/Front/public/logo.png)
 ### *"Uniendo creadores y usuarios para un mundo más inteligente"*
 
 ##  DESCRIPCIÓN DEL PROYECTO
@@ -18,14 +17,17 @@ Las funcionalidades básicas que cubre la aplicación web son las siguientes:
 - Mostrar listado de productos disponibles para los compradores.
 - Mostrar los detalles de cada producto específico.
 - Facilitar el contacto entre clientes y compradores.
-- Dar capacidad a los compradores a añadir nuevos productos.
 - Mostrar productos seleccionados por categorías.
+
+Las funcionalidades proyectadas a corto plazo son:
+- Dar capacidad a los compradores a añadir nuevos productos.
 - Realizar búsquedas de productos.
 
 ## ✨TECNOLOGÍAS UTILIZADAS
 ![Static Badge](https://img.shields.io/badge/Next.js-v%2014.1.0%20-blue?logo=Next.js)
 ![Static Badge](https://img.shields.io/badge/React-v%2018%20-blue?logo=React)
-![Static Badge](https://img.shields.io/badge/Express-4.18.2-blue?logo=Express)
+![Static Badge](https://img.shields.io/badge/SpringWeb-Backend-blue)
+![Static Badge](https://img.shields.io/badge/Spring%20Boot%20Dev%20Tools-Backend-blue)
 ![Static Badge](https://img.shields.io/badge/mySQL2-3.9.1-blue?logo=mysql)
 
 ![Static Badge](https://img.shields.io/badge/Tailwind-Library-red?logo=tailwind)
@@ -33,9 +35,14 @@ Las funcionalidades básicas que cubre la aplicación web son las siguientes:
 
 
 ## ▶️ INSTALACIÓN Y DESPLIEGUE
-En terminal `npm run dev`
+En terminal, desde la carpeta Frontend
+`npm install`
+ `npm run dev`
 
-Base de datos: Railway
+En terminal, desde la carpeta Backend (necesario Java)
+ `./mvnw spring-boot:run`
+ 
+Base de datos: MySQL2
 
 ## Planificación
 Hemos utilizado Miro para crear tableros donde tener accesibles todos los documentos de planificación: breafing, funcionalidaes, historias de usuario, kanban y diagramas de flujo.
@@ -44,13 +51,20 @@ Hemos utilizado Miro para crear tableros donde tener accesibles todos los docume
 
 ## Vistas de la aplicación
 
+
 ## 👨‍💻 AUTORÍA
-Alfredo Escamilla: github
 
-Roxana PJ: github
+Alfredo Escamilla: https://github.com/Alfredo-Escamilla
 
-Nathalia Ruiz: github
+Fátima Cosme: https://github.com/pointfs
 
-Fátima Cosme: github
+Miguel Varona: https://github.com/MigVarona
 
-Miguel Varona: github
+Nathalia Ruiz: https://github.com/NathaRuiz
+
+Roxana PJ: https://github.com/Roxpj
+
+Sandra Rebollar: https://github.com/San-QP
+
+
+
